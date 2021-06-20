@@ -134,10 +134,10 @@ sub getResults{
         return 0;
     }
 
-    #<div id="resultStats">About 32,200 results
-    if ($page=~m# id="resultStats">About (.+?) results#){
+    #<div id="result-stats">About 6,250,000,000 results
+    if ($page=~m# id="result-stats">About (.+?) results#){
         return $1;
-    }elsif ($page=~m# id="resultStats">(.+?) results#){
+    }elsif ($page=~m# id="result-stats">(.+?) results#){
         return $1;
     }else{
         return 0;
